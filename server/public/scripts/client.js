@@ -7,6 +7,9 @@ function onReady() {
     
     // click listeners
     $('#addJokeButton').on('click', addJoke);
+
+    // render DOM with joke data on load
+    gatherJokes();
 }
 
 
@@ -29,7 +32,25 @@ function addJoke() {
         data: newJoke
     }).then(function (response) {
         console.log('POST request to /jokes success', response);
+        // TODO: GET request call to update DOM
+
     }).catch(function (error) {
         console.log('Something went wrong with POST request', error);
     });
 };
+
+
+// GET request function to gather joke data from server and render DOM
+function gatherJokes() {
+    console.log('Beginning joke gather');
+    // AJAX GET request to bring in joke data
+    $.ajax({
+        url: '/jokes',
+        type: 'GET'
+    }).then(function (response) {
+        console.log('GET request from /jokes success', response);
+        
+    }).catch(function (error) {
+        console.log('Something went wrong with GET request', error);   
+    });
+}

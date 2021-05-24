@@ -10,7 +10,7 @@
         - [ ] POST request on button click
             - [x] Link button
             - [x] Gather input data
-            - [ ] Send input data
+            - [x] Send input data
             - [ ] On sent, update display (GET)
     - [ ] Display
         - [ ] All jokes displayed on DOM below inputs
