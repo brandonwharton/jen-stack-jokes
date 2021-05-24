@@ -20,6 +20,16 @@ function addJoke() {
         jokeQuestion: $('#questionIn').val(),
         punchLine: $('#punchlineIn').val(),
     }
+    // console.log('New joke is:', newJoke);
 
-    console.log('New joke is:', newJoke);
+    // AJAX post request to send new joke to server
+    $.ajax ({
+        url: '/jokes',
+        type: 'POST',
+        data: newJoke
+    }).then(function (response) {
+        console.log('POST request to /jokes success', response);
+    }).catch(function (error) {
+        console.log('Something went wrong with POST request', error);
+    });
 };
