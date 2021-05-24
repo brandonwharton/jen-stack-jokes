@@ -32,8 +32,8 @@ function addJoke() {
         data: newJoke
     }).then(function (response) {
         console.log('POST request to /jokes success', response);
-        // TODO: GET request call to update DOM
-
+        // update DOM with GET request
+        gatherJokes();
     }).catch(function (error) {
         console.log('Something went wrong with POST request', error);
     });

@@ -13,11 +13,11 @@
             - [x] Send input data
             - [ ] On sent, update display (GET)
     - [ ] Display
-        - [ ] All jokes displayed on DOM below inputs
-        - [ ] All jokes displayed on app load
+        - [X] All jokes displayed on DOM below inputs
+        - [X] All jokes displayed on app load
     - [ ] GET request
         - [x] AJAX request to server for jokes list
-        - [ ] Display on DOM
+        - [X] Display on DOM
 
 - [x] Server
     - [x] POST
