@@ -48,7 +48,8 @@ app.get('/jokes', (req, res) => {
 // receives joke object from client, adds to jokes array
 app.post('/jokes', (req, res) => {
   console.log('POST from client to /jokes', req.body);
-  
+  // push data from POST request into joke array
+  jokes.push(req.body);
   // send back created affirmation
   res.sendStatus(201);
 });

@@ -19,11 +19,11 @@
         - [ ] AJAX request to server for jokes list
         - [ ] Display on DOM
 
-- [ ] Server
-    - [ ] POST
-        - [ ] recieve joke object in req.body
-        - [ ] push to jokes array
-        - [ ] send back OK
+- [x] Server
+    - [x] POST
+        - [x] recieve joke object in req.body
+        - [x] push to jokes array
+        - [x] send back OK
     - [x] GET
         - [x] Send back entire joke array
 
