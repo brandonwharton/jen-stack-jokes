@@ -24,8 +24,8 @@
         - [ ] recieve joke object in req.body
         - [ ] push to jokes array
         - [ ] send back OK
-    - [ ] GET
-        - [ ] Send back entire joke array
+    - [x] GET
+        - [x] Send back entire joke array
 
 Data Model
 

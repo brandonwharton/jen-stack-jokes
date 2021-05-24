@@ -34,13 +34,24 @@ let jokes = [
   }
 ];
 
+
 // GET /jokes request
 // get entire jokes array from server
 app.get('/jokes', (req, res) => {
   console.log('GET from /jokes');
   // send back jokes array
   res.send(jokes);
-})
+});
+
+
+// POST /jokes request
+// receives joke object from client, adds to jokes array
+app.post('/jokes', (req, res) => {
+  console.log('POST from client to /jokes', req.body);
+  
+  // send back created affirmation
+  res.sendStatus(201);
+});
 
 
 
