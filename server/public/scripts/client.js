@@ -49,7 +49,14 @@ function gatherJokes() {
         type: 'GET'
     }).then(function (response) {
         console.log('GET request from /jokes success', response);
-        
+        // render DOM with jokes data
+        $('#outputDiv').empty();
+        response.forEach(function (joke) {
+            $('#outputDiv').append(`
+                <p>${joke.whoseJoke} asked: ${joke.jokeQuestion}</p>
+                <p>Answer: ${joke.punchLine}</p>
+            `)
+        });
     }).catch(function (error) {
         console.log('Something went wrong with GET request', error);   
     });

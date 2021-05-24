@@ -16,7 +16,7 @@
         - [ ] All jokes displayed on DOM below inputs
         - [ ] All jokes displayed on app load
     - [ ] GET request
-        - [ ] AJAX request to server for jokes list
+        - [x] AJAX request to server for jokes list
         - [ ] Display on DOM
 
 - [x] Server
