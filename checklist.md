@@ -8,8 +8,8 @@
 - [ ] Client
     - [ ] Add jokes using the input form
         - [ ] POST request on button click
-            - [ ] Link button
-            - [ ] Gather input data
+            - [x] Link button
+            - [x] Gather input data
             - [ ] Send input data
             - [ ] On sent, update display (GET)
     - [ ] Display
