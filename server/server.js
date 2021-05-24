@@ -34,6 +34,13 @@ let jokes = [
   }
 ];
 
+// GET /jokes request
+// get entire jokes array from server
+app.get('/jokes', (req, res) => {
+  console.log('GET from /jokes');
+  // send back jokes array
+  res.send(jokes);
+})
 
 
 
