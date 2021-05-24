@@ -1,21 +1,15 @@
-- [ ] Send requests to the server from client using AJAX requests
-    - [ ] GET request
-- [ ] Display response on the DOM
 
-- [ ] Demonstrate the separation of logic between client and the server
-
-
-- [ ] Client
-    - [ ] Add jokes using the input form
-        - [ ] POST request on button click
+- [x] Client
+    - [x] Add jokes using the input form
+        - [x] POST request on button click
             - [x] Link button
             - [x] Gather input data
             - [x] Send input data
-            - [ ] On sent, update display (GET)
-    - [ ] Display
+            - [x] On sent, update display (GET)
+    - [x] Display
         - [X] All jokes displayed on DOM below inputs
         - [X] All jokes displayed on app load
-    - [ ] GET request
+    - [x] GET request
         - [x] AJAX request to server for jokes list
         - [X] Display on DOM
 

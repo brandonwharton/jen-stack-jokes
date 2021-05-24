@@ -48,7 +48,9 @@ app.get('/jokes', (req, res) => {
 // receives joke object from client, adds to jokes array
 app.post('/jokes', (req, res) => {
   console.log('POST from client to /jokes', req.body);
-  // push data from POST request into joke array
+  // send data from POST request into joke array
+  // Data model is the same between client and server
+  // so req.body is fine to push as is
   jokes.push(req.body);
   // send back created affirmation
   res.sendStatus(201);
